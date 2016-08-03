@@ -1,0 +1,15 @@
+[package]
+name = "roshare"
+version = "0.1.0"
+authors = ["Esption"]
+description = "A wrapper around various Mutex/RwLock with the primary intention of making certain shares read-only"
+readme = "README.md"
+license = "MIT/APACHE-2.0"
+
+[features]
+default = []
+
+[dependencies]
+spin = { version = "", optional = true }
+seqlock = { version = "", optional = true }
+
